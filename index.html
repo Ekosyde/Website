@@ -49,6 +49,7 @@
             .bgimg-1 {
                 background-image: url('https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                 min-height: 100%;
+				min-width: 100%;
             }
 
             /* Second image (Portfolio) */
@@ -108,6 +109,16 @@
                 .container {
                 padding: 2px 16px;
                 }
+				
+			@media screen and (max-width: 768px) {
+				.w3-padding-16 {
+					padding: 4px;
+				}
+				.w3-small {
+					font-size: 12px;
+				}
+				}
+
         </style>
     </head>
 <body>
@@ -133,15 +144,15 @@
         </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Simon Rhidian Bell </span><br>
-        </div>
-        <div class="w3-display-bottommiddle w3-padding-16" style="white-space:nowrap;height:47%">
-            <span class="w3-padding w3-black w3-small w3-wide w3-animate-opacity">Full Audio Tester</span>
-        </div>
-    </div>
+	<!-- First Parallax Image with Logo Text -->
+	<div class="bgimg-1 w3-display-container w3-opacity-min w3-row" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"  style="font-size: 16px; padding: 8px;">Simon <span class="w3-hide-small">Rhidian</span> Bell</span>
+		</div>
+		<div class="w3-display-bottommiddle w3-padding-16" style="white-space:nowrap;height:47%">
+			<span class="w3-padding w3-black w3-small w3-wide w3-animate-opacity" style="font-size: 16px; padding: 8px;"><span class="w3-hide-small">Full </span>Audio Tester</span>
+		</div>
+	</div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
